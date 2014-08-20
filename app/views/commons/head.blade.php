@@ -1,8 +1,8 @@
 <!-- Basic Page Needs ================================================== -->
 <meta charset="utf-8" />
 <title>
-    @yield('custom_title') 
-    {{ Config::get('const.page.title.sitename') }}
+    @yield('custom_title')
+    {{ Config::get('const.site.name') }}
 </title>
 <meta name="keywords" content="" />
 <meta name="author" content="Eugene Wang" />
@@ -12,13 +12,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS ================================================== -->
-<link rel="stylesheet" href="/asset/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/asset/bootstrap/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="/asset/css/main.css">
-
-<style>
-    @yield('custom_css')
-</style>
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+@yield('custom_css')
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>

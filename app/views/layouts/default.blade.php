@@ -7,6 +7,7 @@
     <body>
         <!-- To make sticky footer need to wrap in a div -->
         <div id="wrap">
+            @include('commons.top_nav')
             <!-- Container -->
             <div class="container">
                 <!-- Notifications -->
