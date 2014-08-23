@@ -56,10 +56,23 @@ class UserController extends BaseController
 
         UserMailer::welcome($input['email'], $user->id, $activationCode);
 
+        return Redirect::to('/')->with('success', trans('users.send_activatecode'));
+
     }
 
     public function getActivate($user_id, $activationCode)
     {
+        // Find the user using the user id
+        $user = Sentry::findUserById($user_id);
+
+        // Attempt to activate the user
+        if ($user->attemptActivation($activationCode)) {
+            // User activation passed
+            return Redirect::to('/')->with('success', trans('users.activate_success'));
+        } else {
+            // User activation failed
+            return Redirect::to('/')->with('error', trans('users.activate_failed'));
+        }
 
     }
 }

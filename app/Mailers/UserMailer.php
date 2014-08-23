@@ -1,4 +1,4 @@
-<?php namespace Mailers;
+<?php
 
 class UserMailer extends Mailer
 {
@@ -17,7 +17,7 @@ class UserMailer extends Mailer
         $data['activationCode'] = $activationCode;
         $data['email'] = $email;
 
-        return $this->sendTo($email, $subject, $view, $data );
+        return Self::sendTo($email, $subject, $view, $data );
     }
 
 }

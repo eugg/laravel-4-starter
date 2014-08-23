@@ -39,6 +39,12 @@ return array(
 
     'birthday'         => 'Birthday',
 
-    'quick_signup'     => 'Quick SignUp'
+    'quick_signup'     => 'Quick SignUp',
+
+    'send_activatecode'  => 'Your activate code has been sent to your mailbox :)',
+
+    'activate_success' => 'activate success :)',
+
+    'activate_failed' => 'activate failed :(',
 
 );

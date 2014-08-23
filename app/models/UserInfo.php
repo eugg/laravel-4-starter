@@ -2,6 +2,7 @@
 
 class UserInfo extends \Eloquent
 {
+
     protected $table = 'user_info';
 
     protected $guarded = array('id');
@@ -18,7 +19,7 @@ class UserInfo extends \Eloquent
      *
      * @return User
      */
-    public function author()
+    public function user()
     {
         return $this->belongsTo('User', 'user_id');
     }

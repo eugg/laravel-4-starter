@@ -19,6 +19,7 @@ class CreateUserInfo extends Migration
             $table->smallInteger('gender')->nullable();
             $table->date('birthday')->nullable();
             $table->string('contact_email', 255)->nullable();
+            $table->string('avatar', 255)->nullable();
             $table->text('bio', 65535)->nullable();
             $table->string('cellphone', 20)->nullable();
             $table->string('address', 255)->nullable();

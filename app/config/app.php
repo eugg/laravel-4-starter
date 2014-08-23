@@ -123,6 +123,7 @@ return array(
         'Illuminate\Workbench\WorkbenchServiceProvider',
         //custom
         'Cartalyst\Sentry\SentryServiceProvider',
+        'Frozennode\Administrator\AdministratorServiceProvider',
 
     ),
 

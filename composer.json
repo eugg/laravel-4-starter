@@ -8,7 +8,8 @@
 		"cartalyst/sentry": "~2.1",
 		"bllim/datatables": "~1.4",
 	    "laravelbook/ardent": "dev-master",
-        "artdarek/oauth-4-laravel": "dev-master"
+        "artdarek/oauth-4-laravel": "dev-master",
+        "frozennode/administrator": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
